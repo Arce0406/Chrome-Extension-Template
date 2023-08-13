@@ -27,7 +27,10 @@ npx tailwindcss init tailwind.config.cjs -p
 ### Modify tailwind.config.js
 
 ```js
-content: ['./src/**/*.{html,js,svelte,ts}'],
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  // ...
+}
 ```
 
 ### Modify src/app.css
@@ -96,7 +99,7 @@ export default defineConfig({
 });
 ```
 
-## Improve Chrome Plugin TypeScript support
+## TypeScript types support for Chrome Plugin
 
 ```bash
 npm i -D @types/chrome
