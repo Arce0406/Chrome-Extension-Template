@@ -1,0 +1,27 @@
+{
+    "name": "Svelte Tailwind Chrome Extension",
+    "description": "Sample Extension using Svelte and Tailwind",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "src/popup/index.html"
+    },
+    "background": {
+        "service_worker": "src/background.ts",
+        "type": "module"
+    },
+    "chrome_url_overrides": {
+        "newtab": "src/new-tab/index.html"
+    },
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "sidePanel"
+    ],
+    "icons": {
+        "16": "icon16x.png",
+        "32": "icon32x.png",
+        "48": "icon48x.png",
+        "128": "icon128x.png"
+    }
+}
